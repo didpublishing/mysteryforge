@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MysteryForge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-blue-600 mb-2">MysteryForge</h1>
+                <p class="text-gray-600">5-Minute Mystery Generator</p>
+                <div id="status" class="mt-4 text-sm text-green-600">Server Ready</div>
+            </div>
+            <div class="mb-8 p-4 border-2 border-dashed border-gray-300 rounded-lg">
+                <h3 class="text-lg font-semibold mb-4">Database Setup</h3>
+                <input type="file" id="fileInput" accept=".json" class="mb-4 block w-full">
+                <button id="uploadBtn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Upload Database</button>
+                <div id="uploadStatus" class="mt-2 text-sm"></div>
+            </div>
+            <div class="mb-8 p-4 bg-gray-50 rounded-lg">
+                <h3 class="text-lg font-semibold mb-4">API Key</h3>
+                <input type="password" id="apiKey" placeholder="sk-ant-..." class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="mb-8">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <button id="generateBasic" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 disabled:opacity-50" disabled>Generate Basic Story</button>
+                    <button id="generateAI" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 disabled:opacity-50" disabled>Generate AI Story</button>
+                </div>
+                <div id="generateStatus" class="mt-4 text-center text-sm"></div>
+            </div>
+            <div id="storyOutput" class="hidden">
+                <h3 class="text-xl font-bold mb-4">Generated Mystery</h3>
+                <div class="bg-gray-50 p-6 rounded-lg border">
+                    <pre id="storyText" class="whitespace-pre-wrap text-sm"></pre>
+                </div>
+                <div class="mt-4 text-center">
+                    <button id="exportBtn" class="bg-indigo-600 text-white px-4 py-2 rounded">Export</button>
+                    <button id="newStory" class="bg-gray-600 text-white px-4 py-2 rounded ml-2">New Story</button>
+                </div>
+            </div>
+            <div id="dbStats" class="hidden mt-8 p-4 bg-blue-50 rounded-lg">
+                <h3 class="font-semibold mb-2">Database Stats</h3>
+                <div id="statsGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let database = null;
+        let apiKey = '';
+
+        const fileInput = document.getElementById('fileInput');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const uploadStatus = document.getElementById('uploadStatus');
+        const apiKeyInput = document.getElementById('apiKey');
+        const generateBasic = document.getElementById('generateBasic');
+        const generateAI = document.getElementById('generateAI');
+        const generateStatus = document.getElementById('generateStatus');
+        const storyOutput = document.getElementById('storyOutput');
+        const storyText = document.getElementById('storyText');
+        const exportBtn = document.getElementById('exportBtn');
+        const newStory = document.getElementById('newStory');
+        const dbStats = document.getElementById('dbStats');
+        const statsGrid = document.getElementById('statsGrid');
+
+        fileInput.addEventListener('change', () => {
+            uploadBtn.disabled = !fileInput.files[0];
+        });
+
+        apiKeyInput.addEventListener('input', (e) => {
+            apiKey = e.target.value;
+            updateButtons();
+        });
+
+        uploadBtn.addEventListener('click', async () => {
+            const file = fileInput.files[0];
+            if (!file) return;
+            const formData = new FormData();
+            formData.append('database', file);
+            try {
+                uploadStatus.textContent = 'Uploading...';
+                const response = await axios.post('/api/database/upload', formData);
+                if (response.data.success) {
+                    database = response.data.data;
+                    uploadStatus.textContent = 'Success!';
+                    uploadStatus.className = 'mt-2 text-sm text-green-600';
+                    showStats();
+                    updateButtons();
+                }
+            } catch (error) {
+                uploadStatus.textContent = 'Failed: ' + error.message;
+                uploadStatus.className = 'mt-2 text-sm text-red-600';
+            }
+        });
+
+        generateBasic.addEventListener('click', () => {
+            if (!database) return;
+            generateStatus.textContent = 'Generating...';
+            const story = createBasicStory();
+            displayStory(story);
+            generateStatus.textContent = '';
+        });
+
+        function updateButtons() {
+            generateBasic.disabled = !database;
+            generateAI.disabled = !database || !apiKey;
+        }
+
+        function showStats() {
+            if (!database.database_info) return;
+            const stats = database.database_info.total_entries;
+            statsGrid.innerHTML = '';
+            Object.entries(stats).forEach(([key, value]) => {
+                const div = document.createElement('div');
+                div.innerHTML = `<div class="text-2xl font-bold text-blue-600">${value}</div><div class="text-xs text-gray-600">${key}</div>`;
+                statsGrid.appendChild(div);
+            });
+            dbStats.classList.remove('hidden');
+        }
+
+        function createBasicStory() {
+            const alibi = database.alibi_lies[Math.floor(Math.random() * database.alibi_lies.length)];
+            const scenario = database.mystery_scenarios[Math.floor(Math.random() * database.mystery_scenarios.length)];
+            const detective = database.characters[Math.floor(Math.random() * database.characters.length)];
+            const suspect = 'Marcus Sterling';
+            return formatStory(alibi, scenario, detective, suspect);
+        }
+
+        function formatStory(alibi, scenario, detective, suspect) {
+            return `THE ${alibi.category.toUpperCase()} CONTRADICTION
+
+SETTING: ${scenario.location}
+${scenario.setting_description}
+
+THE VICTIM: ${scenario.victim.name}, ${scenario.victim.role}
+
+THE DETECTIVE: ${detective.name}, ${detective.role}
+
+THE MYSTERY:
+During ${scenario.time_constraints}, ${scenario.victim.name} is found dead. ${scenario.special_constraints}
+
+THE ALIBI:
+${suspect} claims: "${alibi.alibi_claim}"
+
+THE CONTRADICTION:
+${alibi.contradiction}
+
+THE SOLUTION:
+Confronted with this impossibility, ${suspect} confesses to the crime.`;
+        }
+
+        function displayStory(story) {
+            storyText.textContent = story;
+            storyOutput.classList.remove('hidden');
+        }
+
+        newStory.addEventListener('click', () => {
+            storyOutput.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
