@@ -1,0 +1,1139 @@
+{
+  "database_info": {
+    "name": "MysteryForge",
+    "version": "1.2",
+    "last_updated": "2025-07-01",
+    "total_entries": {
+      "alibi_lies": 49,
+      "mystery_scenarios": 15,
+      "characters": 8,
+      "investigation_beats": 5,
+      "settings": 8,
+      "props_evidence": 10
+    }
+  },
+
+  "alibi_lies": [
+    {
+      "id": "astronomy_001",
+      "category": "Astronomy",
+      "subcategory": "Celestial Events",
+      "alibi_claim": "I was outside watching the comet at midnight",
+      "contradiction": "Comet visible pre-dawn, not midnight",
+      "expertise_level": "basic",
+      "tags": ["astronomy", "scientific", "timing", "visibility", "night_sky"],
+      "setting_types": ["observatory", "planetarium", "rooftop", "countryside", "university"],
+      "detective_types": ["astronomer", "science_teacher", "amateur_stargazer"]
+    },
+    {
+      "id": "astronomy_002",
+      "category": "Astronomy",
+      "subcategory": "Lunar Phases",
+      "alibi_claim": "I was photographing the full moon that night",
+      "contradiction": "Moon was new, not full",
+      "expertise_level": "basic",
+      "tags": ["astronomy", "scientific", "timing", "photography", "night_sky"],
+      "setting_types": ["observatory", "rooftop", "park", "countryside"],
+      "detective_types": ["astronomer", "photographer", "amateur_stargazer"]
+    },
+    {
+      "id": "astronomy_003",
+      "category": "Astronomy",
+      "subcategory": "Satellite Tracking",
+      "alibi_claim": "I was tracking the International Space Station overhead",
+      "contradiction": "No ISS pass on that night",
+      "expertise_level": "intermediate",
+      "tags": ["astronomy", "satellite", "tracking", "timing", "scientific"],
+      "setting_types": ["observatory", "rooftop", "university"],
+      "detective_types": ["astronomer", "satellite_tracker", "science_teacher"]
+    },
+    {
+      "id": "astronomy_004",
+      "category": "Astronomy",
+      "subcategory": "Meteor Showers",
+      "alibi_claim": "I was watching the meteor shower in April",
+      "contradiction": "Meteor shower doesn't happen in April",
+      "expertise_level": "basic",
+      "tags": ["astronomy", "meteors", "seasonal", "timing", "scientific"],
+      "setting_types": ["countryside", "rooftop", "park"],
+      "detective_types": ["astronomer", "amateur_stargazer"]
+    },
+    {
+      "id": "astronomy_005",
+      "category": "Astronomy",
+      "subcategory": "Aurora Observation",
+      "alibi_claim": "I was photographing the aurora borealis",
+      "contradiction": "Aurora not visible at that latitude/time",
+      "expertise_level": "intermediate",
+      "tags": ["astronomy", "aurora", "latitude", "photography", "scientific"],
+      "setting_types": ["countryside", "observatory"],
+      "detective_types": ["astronomer", "photographer", "meteorologist"]
+    },
+    {
+      "id": "astronomy_006",
+      "category": "Astronomy",
+      "subcategory": "Solar Events",
+      "alibi_claim": "I was setting up to view the solar eclipse",
+      "contradiction": "No eclipse visible that day/location",
+      "expertise_level": "basic",
+      "tags": ["astronomy", "solar", "eclipse", "timing", "scientific"],
+      "setting_types": ["observatory", "rooftop", "park"],
+      "detective_types": ["astronomer", "science_teacher"]
+    },
+    {
+      "id": "astronomy_007",
+      "category": "Astronomy",
+      "subcategory": "Solar Activity",
+      "alibi_claim": "I was monitoring solar flare activity on my radio",
+      "contradiction": "No solar activity reported",
+      "expertise_level": "expert",
+      "tags": ["astronomy", "solar", "radio", "monitoring", "scientific"],
+      "setting_types": ["observatory", "university", "home"],
+      "detective_types": ["astronomer", "radio_operator", "physics_professor"]
+    },
+    {
+      "id": "astronomy_008",
+      "category": "Astronomy",
+      "subcategory": "Star Navigation",
+      "alibi_claim": "I was using my star chart to find Orion in the southern sky",
+      "contradiction": "Cited constellations not visible in that hemisphere",
+      "expertise_level": "intermediate",
+      "tags": ["astronomy", "navigation", "hemisphere", "constellations", "scientific"],
+      "setting_types": ["countryside", "rooftop", "observatory"],
+      "detective_types": ["astronomer", "navigator", "science_teacher"]
+    },
+    {
+      "id": "astronomy_009",
+      "category": "Astronomy",
+      "subcategory": "Dawn Timing",
+      "alibi_claim": "I was photographing the sunrise at 6 AM",
+      "contradiction": "Sunrise occurred after claimed time",
+      "expertise_level": "basic",
+      "tags": ["astronomy", "dawn", "timing", "photography", "scientific"],
+      "setting_types": ["rooftop", "park", "countryside"],
+      "detective_types": ["photographer", "astronomer"]
+    },
+    {
+      "id": "astronomy_010",
+      "category": "Astronomy",
+      "subcategory": "Planet Observation",
+      "alibi_claim": "I was observing Venus through my telescope at midnight",
+      "contradiction": "Venus not visible at midnight",
+      "expertise_level": "basic",
+      "tags": ["astronomy", "planets", "visibility", "timing", "scientific"],
+      "setting_types": ["observatory", "rooftop", "countryside"],
+      "detective_types": ["astronomer", "amateur_stargazer"]
+    },
+    {
+      "id": "automotive_001",
+      "category": "Automotive",
+      "subcategory": "Electric Vehicles",
+      "alibi_claim": "I was changing the oil in my electric car",
+      "contradiction": "EVs don't require oil changes",
+      "expertise_level": "intermediate",
+      "tags": ["automotive", "electric", "technical", "maintenance", "industrial"],
+      "setting_types": ["garage", "parking_lot", "dealership", "service_center"],
+      "detective_types": ["mechanic", "ev_specialist", "automotive_expert"]
+    },
+    {
+      "id": "automotive_002",
+      "category": "Automotive",
+      "subcategory": "Electric Vehicles",
+      "alibi_claim": "I was replacing spark plugs in my electric vehicle",
+      "contradiction": "EVs don't have spark plugs",
+      "expertise_level": "intermediate",
+      "tags": ["automotive", "electric", "technical", "maintenance", "industrial"],
+      "setting_types": ["garage", "service_center", "dealership"],
+      "detective_types": ["mechanic", "ev_specialist", "automotive_expert"]
+    },
+    {
+      "id": "automotive_003",
+      "category": "Automotive",
+      "subcategory": "Electric Vehicles",
+      "alibi_claim": "I was replacing the muffler on my EV",
+      "contradiction": "EVs don't have mufflers",
+      "expertise_level": "intermediate",
+      "tags": ["automotive", "electric", "technical", "maintenance", "industrial"],
+      "setting_types": ["garage", "service_center"],
+      "detective_types": ["mechanic", "ev_specialist"]
+    },
+    {
+      "id": "automotive_004",
+      "category": "Automotive",
+      "subcategory": "Electric Vehicles",
+      "alibi_claim": "I was jump-starting my electric vehicle",
+      "contradiction": "Jump-starting is unsafe/impossible for EVs",
+      "expertise_level": "intermediate",
+      "tags": ["automotive", "electric", "safety", "technical", "dangerous"],
+      "setting_types": ["parking_lot", "garage", "roadside"],
+      "detective_types": ["mechanic", "ev_specialist", "safety_expert"]
+    },
+    {
+      "id": "automotive_005",
+      "category": "Automotive",
+      "subcategory": "Electric Vehicles",
+      "alibi_claim": "I was cleaning the fuel injectors on my Tesla",
+      "contradiction": "EVs don't have fuel injectors",
+      "expertise_level": "intermediate",
+      "tags": ["automotive", "electric", "technical", "maintenance", "industrial"],
+      "setting_types": ["garage", "service_center"],
+      "detective_types": ["mechanic", "ev_specialist"]
+    },
+    {
+      "id": "automotive_006",
+      "category": "Automotive",
+      "subcategory": "Electric Vehicles",
+      "alibi_claim": "I was fixing the radiator in my Tesla",
+      "contradiction": "Closed-loop cooling, not a radiator",
+      "expertise_level": "expert",
+      "tags": ["automotive", "electric", "cooling", "technical", "industrial"],
+      "setting_types": ["garage", "service_center"],
+      "detective_types": ["ev_specialist", "automotive_engineer"]
+    },
+    {
+      "id": "automotive_007",
+      "category": "Automotive",
+      "subcategory": "Maintenance",
+      "alibi_claim": "I was replacing my car battery in the garage",
+      "contradiction": "Clock and radio not reset; battery wasn't replaced",
+      "expertise_level": "basic",
+      "tags": ["automotive", "battery", "maintenance", "evidence", "industrial"],
+      "setting_types": ["garage", "parking_lot", "home"],
+      "detective_types": ["mechanic", "automotive_expert"]
+    },
+    {
+      "id": "automotive_008",
+      "category": "Automotive",
+      "subcategory": "Electric Charging",
+      "alibi_claim": "I was waiting in line at the charging station",
+      "contradiction": "Car never connected to charger",
+      "expertise_level": "basic",
+      "tags": ["automotive", "electric", "charging", "alibi", "remote"],
+      "setting_types": ["charging_station", "parking_lot"],
+      "detective_types": ["ev_specialist", "security_guard"]
+    },
+    {
+      "id": "automotive_009",
+      "category": "Automotive",
+      "subcategory": "Roadside Repair",
+      "alibi_claim": "I was fixing a flat tire on the roadside",
+      "contradiction": "Flat tire has no damage or signs of repair",
+      "expertise_level": "basic",
+      "tags": ["automotive", "tire", "roadside", "evidence", "remote"],
+      "setting_types": ["roadside", "parking_lot"],
+      "detective_types": ["mechanic", "forensic_expert"]
+    },
+    {
+      "id": "chemistry_001",
+      "category": "Chemistry",
+      "subcategory": "Chemical Reactions",
+      "alibi_claim": "I was mixing bleach and ammonia to clean the floor",
+      "contradiction": "Mixing bleach and ammonia is dangerous and creates toxic gas",
+      "expertise_level": "expert",
+      "tags": ["chemistry", "dangerous", "cleaning", "toxic", "laboratory"],
+      "setting_types": ["laboratory", "hospital", "industrial", "home"],
+      "detective_types": ["chemist", "hazmat_specialist", "lab_technician"]
+    },
+    {
+      "id": "chemistry_002",
+      "category": "Chemistry",
+      "subcategory": "Acid Safety",
+      "alibi_claim": "I was diluting battery acid with water",
+      "contradiction": "Water causes acid to splatter",
+      "expertise_level": "expert",
+      "tags": ["chemistry", "acid", "safety", "dangerous", "laboratory"],
+      "setting_types": ["laboratory", "industrial", "garage"],
+      "detective_types": ["chemist", "safety_expert", "hazmat_specialist"]
+    },
+    {
+      "id": "chemistry_003",
+      "category": "Chemistry",
+      "subcategory": "Forensic Chemistry",
+      "alibi_claim": "I cleaned up the blood stain with bleach - no traces left",
+      "contradiction": "Luminol can still detect blood after bleaching",
+      "expertise_level": "expert",
+      "tags": ["chemistry", "forensic", "blood", "evidence", "controlled"],
+      "setting_types": ["laboratory", "crime_scene", "home"],
+      "detective_types": ["forensic_scientist", "chemist", "crime_tech"]
+    },
+    {
+      "id": "chemistry_004",
+      "category": "Chemistry",
+      "subcategory": "Color Reactions",
+      "alibi_claim": "I was testing iron salts - they turned blue as expected",
+      "contradiction": "Iron salts don't turn blue",
+      "expertise_level": "expert",
+      "tags": ["chemistry", "color", "testing", "reactions", "laboratory"],
+      "setting_types": ["laboratory", "university", "industrial"],
+      "detective_types": ["chemist", "lab_technician", "chemistry_professor"]
+    },
+    {
+      "id": "chemistry_005",
+      "category": "Chemistry",
+      "subcategory": "Fire Safety",
+      "alibi_claim": "I put out the grease fire with water",
+      "contradiction": "Water spreads grease fire",
+      "expertise_level": "intermediate",
+      "tags": ["chemistry", "fire", "safety", "kitchen", "dangerous"],
+      "setting_types": ["kitchen", "restaurant", "laboratory"],
+      "detective_types": ["fire_inspector", "safety_expert", "chef"]
+    },
+    {
+      "id": "chemistry_006",
+      "category": "Chemistry",
+      "subcategory": "Phase Changes",
+      "alibi_claim": "I made instant ice by adding salt to the water",
+      "contradiction": "Salt lowers freezing point—no instant ice",
+      "expertise_level": "basic",
+      "tags": ["chemistry", "ice", "salt", "freezing", "controlled"],
+      "setting_types": ["laboratory", "kitchen", "home"],
+      "detective_types": ["chemist", "science_teacher"]
+    },
+    {
+      "id": "chemistry_007",
+      "category": "Chemistry",
+      "subcategory": "Stain Removal",
+      "alibi_claim": "I removed the red wine stain with lemon juice",
+      "contradiction": "Lemon juice would set, not remove, the stain",
+      "expertise_level": "intermediate",
+      "tags": ["chemistry", "stain", "acid", "cleaning", "cozy"],
+      "setting_types": ["home", "restaurant", "hotel"],
+      "detective_types": ["chemist", "cleaning_expert"]
+    },
+    {
+      "id": "chemistry_008",
+      "category": "Chemistry",
+      "subcategory": "Metal Cleaning",
+      "alibi_claim": "I removed all the rust using just baking soda",
+      "contradiction": "Baking soda too weak to remove rust alone",
+      "expertise_level": "intermediate",
+      "tags": ["chemistry", "rust", "cleaning", "metal", "industrial"],
+      "setting_types": ["garage", "laboratory", "industrial"],
+      "detective_types": ["chemist", "metalworker", "mechanic"]
+    },
+    {
+      "id": "chemistry_009",
+      "category": "Chemistry",
+      "subcategory": "Metal Cleaning",
+      "alibi_claim": "I cleaned the silver jewelry with plain water",
+      "contradiction": "Water alone can't clean silver tarnish",
+      "expertise_level": "basic",
+      "tags": ["chemistry", "silver", "cleaning", "jewelry", "collectibles"],
+      "setting_types": ["jewelry_store", "home", "laboratory"],
+      "detective_types": ["jeweler", "chemist"]
+    },
+    {
+      "id": "chemistry_010",
+      "category": "Chemistry",
+      "subcategory": "Acid-Base",
+      "alibi_claim": "I neutralized the strong base with household vinegar",
+      "contradiction": "Vinegar not enough for strong base neutralization",
+      "expertise_level": "expert",
+      "tags": ["chemistry", "acid", "base", "neutralization", "dangerous"],
+      "setting_types": ["laboratory", "industrial", "university"],
+      "detective_types": ["chemist", "lab_technician", "safety_expert"]
+    },
+    {
+      "id": "wine_001",
+      "category": "Wine",
+      "subcategory": "Vintage Knowledge",
+      "alibi_claim": "I was comparing a 1943 Bordeaux with my collection",
+      "contradiction": "1943 Bordeaux vintage was never released due to wartime shortages",
+      "expertise_level": "expert",
+      "tags": ["wine", "historical", "wartime", "vintage", "expensive"],
+      "setting_types": ["wine_cellar", "restaurant", "auction_house", "vineyard"],
+      "detective_types": ["sommelier", "wine_expert", "historian", "auction_specialist"]
+    },
+    {
+      "id": "wine_002",
+      "category": "Wine",
+      "subcategory": "Vineyard Operations",
+      "alibi_claim": "I visited the vineyard's tasting room on Tuesday",
+      "contradiction": "Vineyard is closed weekdays—visits are by appointment only",
+      "expertise_level": "basic",
+      "tags": ["wine", "vineyard", "schedule", "tasting", "private"],
+      "setting_types": ["vineyard", "tasting_room"],
+      "detective_types": ["vineyard_manager", "sommelier"]
+    },
+    {
+      "id": "wine_003",
+      "category": "Wine",
+      "subcategory": "Forensic Evidence",
+      "alibi_claim": "I spilled red wine on my shirt while pouring",
+      "contradiction": "Stain pattern inconsistent with handedness of the suspect",
+      "expertise_level": "expert",
+      "tags": ["wine", "forensic", "pattern", "evidence", "tasting"],
+      "setting_types": ["restaurant", "home", "wine_cellar"],
+      "detective_types": ["forensic_expert", "sommelier"]
+    },
+    {
+      "id": "wine_004",
+      "category": "Wine",
+      "subcategory": "Wine Service",
+      "alibi_claim": "I was decanting the 2005 Barolo for several hours",
+      "contradiction": "2005 Barolo doesn't require long decanting—behavior is suspicious",
+      "expertise_level": "expert",
+      "tags": ["wine", "decanting", "service", "timing", "elegant"],
+      "setting_types": ["restaurant", "wine_cellar", "home"],
+      "detective_types": ["sommelier", "wine_expert"]
+    },
+    {
+      "id": "wine_005",
+      "category": "Wine",
+      "subcategory": "Wine Opening",
+      "alibi_claim": "I opened the champagne bottle with my corkscrew",
+      "contradiction": "Champagne corks aren't removed with corkscrews",
+      "expertise_level": "basic",
+      "tags": ["wine", "champagne", "opening", "tools", "tasting"],
+      "setting_types": ["restaurant", "home", "celebration"],
+      "detective_types": ["sommelier", "bartender"]
+    },
+    {
+      "id": "wine_006",
+      "category": "Wine",
+      "subcategory": "Storage Conditions",
+      "alibi_claim": "I was organizing wine bottles during the power outage",
+      "contradiction": "Wine cellars are pitch dark during blackouts—sorting impossible",
+      "expertise_level": "intermediate",
+      "tags": ["wine", "storage", "lighting", "conditions", "underground"],
+      "setting_types": ["wine_cellar", "restaurant"],
+      "detective_types": ["wine_expert", "cellar_master"]
+    },
+    {
+      "id": "wine_007",
+      "category": "Wine",
+      "subcategory": "Harvest Timing",
+      "alibi_claim": "I was helping with the Syrah harvest that week",
+      "contradiction": "Syrah harvest didn't align with alibi timing",
+      "expertise_level": "expert",
+      "tags": ["wine", "harvest", "timing", "seasonal", "vineyard"],
+      "setting_types": ["vineyard", "winery"],
+      "detective_types": ["vintner", "wine_expert", "vineyard_manager"]
+    },
+    {
+      "id": "wine_008",
+      "category": "Wine",
+      "subcategory": "Wine Storage",
+      "alibi_claim": "I store my best white wines in the kitchen wine rack",
+      "contradiction": "No serious collector stores white wine in a kitchen rack",
+      "expertise_level": "intermediate",
+      "tags": ["wine", "storage", "temperature", "white_wine", "cozy"],
+      "setting_types": ["home", "restaurant", "wine_cellar"],
+      "detective_types": ["wine_expert", "sommelier"]
+    },
+    {
+      "id": "wine_009",
+      "category": "Wine",
+      "subcategory": "Wine Cleanup",
+      "alibi_claim": "I cleaned up the broken wine bottle immediately",
+      "contradiction": "No wine smell or residue found at alleged cleanup site",
+      "expertise_level": "basic",
+      "tags": ["wine", "cleanup", "evidence", "spill", "forensic"],
+      "setting_types": ["restaurant", "home", "wine_cellar"],
+      "detective_types": ["forensic_expert", "crime_tech"]
+    },
+    {
+      "id": "wine_010",
+      "category": "Wine",
+      "subcategory": "Wine Labels",
+      "alibi_claim": "I could clearly read the vintage on the bottle",
+      "contradiction": "Label not visible in that vintage—covered by foil",
+      "expertise_level": "expert",
+      "tags": ["wine", "labels", "vintage", "packaging", "collectibles"],
+      "setting_types": ["wine_cellar", "auction_house", "restaurant"],
+      "detective_types": ["wine_expert", "auction_specialist"]
+    },
+    {
+      "id": "wine_011",
+      "category": "Wine",
+      "subcategory": "Wine Technology",
+      "alibi_claim": "The 1970s bottle had a modern screwcap closure",
+      "contradiction": "Screwcaps were rare in the 1970s—timeline is inaccurate",
+      "expertise_level": "expert",
+      "tags": ["wine", "technology", "closure", "historical", "collectibles"],
+      "setting_types": ["wine_cellar", "auction_house", "museum"],
+      "detective_types": ["wine_historian", "wine_expert"]
+    },
+    {
+      "id": "wine_012",
+      "category": "Wine",
+      "subcategory": "Wine Pairing",
+      "alibi_claim": "I paired the coq au vin with Pinot Grigio",
+      "contradiction": "Recipe does not traditionally use Pinot Grigio",
+      "expertise_level": "intermediate",
+      "tags": ["wine", "pairing", "cuisine", "tradition", "cozy"],
+      "setting_types": ["restaurant", "home", "cooking_school"],
+      "detective_types": ["sommelier", "chef", "culinary_expert"]
+    },
+    {
+      "id": "vintage_comics_001",
+      "category": "Vintage Comics",
+      "subcategory": "Comic Handling",
+      "alibi_claim": "I was casually handling this rare first appearance issue",
+      "contradiction": "Rare issue would be slabbed, not handled casually",
+      "expertise_level": "expert",
+      "tags": ["comics", "collectibles", "handling", "preservation", "convention"],
+      "setting_types": ["comic_shop", "convention", "home", "auction"],
+      "detective_types": ["comic_expert", "collector", "appraiser"]
+    },
+    {
+      "id": "vintage_comics_002",
+      "category": "Vintage Comics",
+      "subcategory": "Comic Signing",
+      "alibi_claim": "I got this Golden Age comic signed at the convention",
+      "contradiction": "Golden Age comic too fragile to sign; no collector would do this",
+      "expertise_level": "expert",
+      "tags": ["comics", "signing", "preservation", "convention", "crowded"],
+      "setting_types": ["convention", "comic_shop", "auction"],
+      "detective_types": ["comic_expert", "convention_organizer"]
+    },
+    {
+      "id": "vintage_comics_003",
+      "category": "Vintage Comics",
+      "subcategory": "Comic Variants",
+      "alibi_claim": "I have the rare blue variant of this issue",
+      "contradiction": "No blue variant exists for that comic",
+      "expertise_level": "expert",
+      "tags": ["comics", "variants", "rarity", "knowledge", "collectibles"],
+      "setting_types": ["comic_shop", "convention", "auction"],
+      "detective_types": ["comic_expert", "variant_specialist"]
+    },
+    {
+      "id": "vintage_comics_004",
+      "category": "Vintage Comics",
+      "subcategory": "Comic History",
+      "alibi_claim": "Batman first appeared in Detective Comics #28",
+      "contradiction": "Batman first appeared in #27, not #28",
+      "expertise_level": "intermediate",
+      "tags": ["comics", "batman", "history", "first_appearance", "retail"],
+      "setting_types": ["comic_shop", "convention", "library"],
+      "detective_types": ["comic_historian", "batman_expert"]
+    },
+    {
+      "id": "vintage_comics_005",
+      "category": "Vintage Comics",
+      "subcategory": "Creator Meetings",
+      "alibi_claim": "I met Jack Kirby at the convention last year",
+      "contradiction": "Jack Kirby died in 1994; meeting him is impossible",
+      "expertise_level": "basic",
+      "tags": ["comics", "creators", "jack_kirby", "timeline", "convention"],
+      "setting_types": ["convention", "comic_shop"],
+      "detective_types": ["comic_historian", "convention_expert"]
+    },
+    {
+      "id": "cozy_001",
+      "category": "Cozy Mystery",
+      "subcategory": "Weather Evidence",
+      "alibi_claim": "I stayed inside all day during the storm",
+      "contradiction": "Raincoat should be wet if recently worn",
+      "expertise_level": "basic",
+      "tags": ["cozy", "weather", "evidence", "clothing", "rural"],
+      "setting_types": ["home", "cottage", "inn"],
+      "detective_types": ["local_detective", "amateur_sleuth"]
+    },
+    {
+      "id": "cozy_002",
+      "category": "Cozy Mystery",
+      "subcategory": "Sight Lines",
+      "alibi_claim": "I saw everything from my kitchen window",
+      "contradiction": "Window visibility was physically impossible",
+      "expertise_level": "basic",
+      "tags": ["cozy", "visibility", "sightlines", "geography", "isolated"],
+      "setting_types": ["home", "cottage", "village"],
+      "detective_types": ["local_detective", "amateur_sleuth"]
+    },
+    {
+      "id": "cozy_003",
+      "category": "Cozy Mystery",
+      "subcategory": "Plant Care",
+      "alibi_claim": "Nobody was home during the heat wave",
+      "contradiction": "Healthy plants mean someone watered them",
+      "expertise_level": "basic",
+      "tags": ["cozy", "plants", "care", "evidence", "greenhouse"],
+      "setting_types": ["home", "cottage", "greenhouse"],
+      "detective_types": ["gardener", "amateur_sleuth", "botanist"]
+    }
+  ],
+
+  "mystery_scenarios": [
+    {
+      "id": "scenario_001",
+      "mystery_type": "locked-room",
+      "location": "Private Wine Cellar",
+      "setting_description": "Underground stone wine cellar with single entrance",
+      "victim": {
+        "name": "Victor Bordeaux",
+        "role": "Wine Collector",
+        "background": "Wealthy collector with rare vintage obsession"
+      },
+      "situation_context": "Private tasting of rare vintage collection",
+      "conflict_source": "Insurance fraud involving fake wine bottles",
+      "detective_reason": "Consulting on wine authentication for insurance",
+      "key_props": ["vintage_bottles", "corkscrew", "humidity_controls", "tasting_notes"],
+      "setting_tags": ["wine", "underground", "private", "expensive", "locked"],
+      "time_constraints": "Late evening tasting",
+      "weapon_method": "Vintage wine bottle",
+      "special_constraints": "Heavy stone door with medieval lock"
+    },
+    {
+      "id": "scenario_002",
+      "mystery_type": "locked-room",
+      "location": "Observatory Dome",
+      "setting_description": "Astronomy tower with rotating dome and telescope",
+      "victim": {
+        "name": "Professor Marcus Stellan",
+        "role": "Astronomer",
+        "background": "Distinguished professor studying celestial phenomena"
+      },
+      "situation_context": "Private viewing of rare celestial event",
+      "conflict_source": "Academic fraud in research publications",
+      "detective_reason": "Verifying authenticity of ancient star charts",
+      "key_props": ["telescope", "star_charts", "dome_controls", "observation_log"],
+      "setting_tags": ["astronomy", "scientific", "isolated", "rotating", "locked"],
+      "time_constraints": "Clear night during meteor shower",
+      "weapon_method": "Telescope mount",
+      "special_constraints": "Dome sealed during rotation cycle"
+    },
+    {
+      "id": "scenario_003",
+      "mystery_type": "alibi-breaker",
+      "location": "Automotive Garage",
+      "setting_description": "Professional garage with multiple service bays",
+      "victim": {
+        "name": "Frank Motorson",
+        "role": "Garage Owner",
+        "background": "Veteran mechanic specializing in electric vehicle conversion"
+      },
+      "situation_context": "Late-night EV conversion project",
+      "conflict_source": "Dispute over conversion patents and licensing",
+      "detective_reason": "Investigating automotive fraud reports",
+      "key_props": ["ev_battery", "conversion_kit", "diagnostic_tools", "work_orders"],
+      "setting_tags": ["automotive", "technical", "industrial", "electric", "secure"],
+      "time_constraints": "After-hours work session",
+      "weapon_method": "Heavy battery pack",
+      "special_constraints": "Security cameras record all activity"
+    },
+    {
+      "id": "scenario_004",
+      "mystery_type": "locked-room",
+      "location": "Chemistry Laboratory",
+      "setting_description": "University chemistry lab with controlled access",
+      "victim": {
+        "name": "Dr. Helena Catalyst",
+        "role": "Chemistry Professor",
+        "background": "Respected researcher working on industrial processes"
+      },
+      "situation_context": "Late-night research experiment",
+      "conflict_source": "Rivalry over patent rights for new chemical process",
+      "detective_reason": "Investigating lab safety violations",
+      "key_props": ["chemical_bottles", "safety_equipment", "lab_notebook", "fume_hood"],
+      "setting_tags": ["chemistry", "laboratory", "dangerous", "academic", "controlled"],
+      "time_constraints": "After hours when building is secured",
+      "weapon_method": "Toxic chemical exposure",
+      "special_constraints": "Emergency lockdown protocol activated"
+    },
+    {
+      "id": "scenario_005",
+      "mystery_type": "alibi-breaker",
+      "location": "Comic Convention",
+      "setting_description": "Busy convention center during peak weekend hours",
+      "victim": {
+        "name": "Stan Collector",
+        "role": "Comic Dealer",
+        "background": "Veteran dealer specializing in Golden Age comics"
+      },
+      "situation_context": "High-value comic authentication and sale",
+      "conflict_source": "Dispute over authenticity of rare comic",
+      "detective_reason": "Investigating collectibles fraud",
+      "key_props": ["comic_books", "grading_certificates", "magnifying_glass", "price_guides"],
+      "setting_tags": ["comics", "convention", "collectibles", "crowded", "retail"],
+      "time_constraints": "Busy weekend convention hours",
+      "weapon_method": "Blunt force trauma",
+      "special_constraints": "Multiple witnesses but conflicting stories"
+    },
+    {
+      "id": "scenario_006",
+      "mystery_type": "suspicious-circumstances",
+      "location": "Country Cottage",
+      "setting_description": "Remote cottage during weekend retreat",
+      "victim": {
+        "name": "Rose Gardener",
+        "role": "Botanical Expert",
+        "background": "Plant specialist hosting nature writers' retreat"
+      },
+      "situation_context": "Writers' retreat focusing on nature themes",
+      "conflict_source": "Plagiarism accusations among participants",
+      "detective_reason": "Called in when death seems suspicious",
+      "key_props": ["gardening_tools", "plant_specimens", "writing_materials", "weather_station"],
+      "setting_tags": ["cozy", "rural", "plants", "writing", "isolated"],
+      "time_constraints": "Weekend during storm",
+      "weapon_method": "Poisonous plant extract",
+      "special_constraints": "Remote location with limited communication"
+    },
+    {
+      "id": "scenario_007",
+      "mystery_type": "locked-room",
+      "location": "Vineyard Tasting Room",
+      "setting_description": "Private tasting room overlooking vineyard",
+      "victim": {
+        "name": "Henri Vintner",
+        "role": "Vineyard Owner",
+        "background": "Third-generation winemaker with prestigious reputation"
+      },
+      "situation_context": "Exclusive wine tasting for investors",
+      "conflict_source": "Financial troubles threatening vineyard sale",
+      "detective_reason": "Insurance investigation into suspicious death",
+      "key_props": ["wine_glasses", "tasting_notes", "financial_documents", "vintage_bottles"],
+      "setting_tags": ["wine", "vineyard", "tasting", "financial", "elegant"],
+      "time_constraints": "During private investor meeting",
+      "weapon_method": "Poisoned wine",
+      "special_constraints": "Room locked from inside, key in victim's pocket"
+    },
+    {
+      "id": "scenario_008",
+      "mystery_type": "alibi-breaker",
+      "location": "University Observatory",
+      "setting_description": "Campus observatory during research session",
+      "victim": {
+        "name": "Dr. Stella Cosmos",
+        "role": "Astronomy Department Head",
+        "background": "Leading researcher in stellar observation"
+      },
+      "situation_context": "Late-night research session before major publication",
+      "conflict_source": "Academic rivalry over research credit",
+      "detective_reason": "University security investigation",
+      "key_props": ["telescope_equipment", "research_data", "observation_logs", "computer_systems"],
+      "setting_tags": ["astronomy", "university", "research", "academic", "scientific"],
+      "time_constraints": "During scheduled observation window",
+      "weapon_method": "Fall from observatory platform",
+      "special_constraints": "Electronic security logs track all access"
+    },
+    {
+      "id": "scenario_009",
+      "mystery_type": "suspicious-circumstances",
+      "location": "Roadside Service Station",
+      "setting_description": "Remote EV charging station on highway",
+      "victim": {
+        "name": "Alex Charger",
+        "role": "Charging Station Manager",
+        "background": "Tech-savvy manager of new EV infrastructure"
+      },
+      "situation_context": "Late-night shift at isolated charging station",
+      "conflict_source": "Sabotage of competing charging networks",
+      "detective_reason": "State police investigation into suspicious death",
+      "key_props": ["charging_cables", "payment_terminals", "security_cameras", "maintenance_tools"],
+      "setting_tags": ["automotive", "electric", "remote", "highway", "industrial"],
+      "time_constraints": "Overnight shift with minimal traffic",
+      "weapon_method": "Electrical accident",
+      "special_constraints": "Remote location with limited cell service"
+    },
+    {
+      "id": "scenario_010",
+      "mystery_type": "locked-room",
+      "location": "Industrial Chemical Plant",
+      "setting_description": "Secured chemical processing facility",
+      "victim": {
+        "name": "Dr. Maria Reactive",
+        "role": "Chief Safety Officer",
+        "background": "Safety expert with 20 years of chemical industry experience"
+      },
+      "situation_context": "Emergency safety inspection after accident reports",
+      "conflict_source": "Cover-up of safety violations to avoid shutdown",
+      "detective_reason": "OSHA investigation into workplace death",
+      "key_props": ["safety_equipment", "chemical_containers", "monitoring_systems", "emergency_protocols"],
+      "setting_tags": ["chemistry", "industrial", "safety", "dangerous", "controlled"],
+      "time_constraints": "During emergency inspection",
+      "weapon_method": "Chemical exposure",
+      "special_constraints": "Facility in lockdown mode, all exits secured"
+    },
+    {
+      "id": "scenario_011",
+      "mystery_type": "alibi-breaker",
+      "location": "Planetarium",
+      "setting_description": "Public planetarium during evening show",
+      "victim": {
+        "name": "Carl Starman",
+        "role": "Planetarium Director",
+        "background": "Popular educator and astronomy enthusiast"
+      },
+      "situation_context": "Special evening show for astronomy club",
+      "conflict_source": "Funding cuts threatening planetarium closure",
+      "detective_reason": "Police investigation into suspicious death",
+      "key_props": ["projection_equipment", "star_charts", "show_scripts", "lighting_controls"],
+      "setting_tags": ["astronomy", "education", "public", "dark", "scientific"],
+      "time_constraints": "During scheduled evening show",
+      "weapon_method": "Fall from projection booth",
+      "special_constraints": "Dark environment with limited visibility"
+    },
+    {
+      "id": "scenario_012",
+      "mystery_type": "suspicious-circumstances",
+      "location": "Comic Book Store",
+      "setting_description": "Specialty comic shop during release day",
+      "victim": {
+        "name": "Pete Pages",
+        "role": "Comic Shop Owner",
+        "background": "Lifelong collector and comic book expert"
+      },
+      "situation_context": "Busy release day for highly anticipated comic",
+      "conflict_source": "Dispute over rare comic ownership",
+      "detective_reason": "Insurance investigation into theft and death",
+      "key_props": ["comic_collections", "cash_register", "security_camera", "collector_catalogs"],
+      "setting_tags": ["comics", "retail", "collectibles", "busy", "crowded"],
+      "time_constraints": "During peak customer hours",
+      "weapon_method": "Heavy comic storage box",
+      "special_constraints": "Multiple customers present as witnesses"
+    },
+    {
+      "id": "scenario_013",
+      "mystery_type": "locked-room",
+      "location": "Home Kitchen",
+      "setting_description": "Cozy kitchen during dinner preparation",
+      "victim": {
+        "name": "Martha Homebody",
+        "role": "Food Blogger",
+        "background": "Popular cooking blogger known for traditional recipes"
+      },
+      "situation_context": "Preparing special dinner for food critics",
+      "conflict_source": "Plagiarism accusations over recipe theft",
+      "detective_reason": "Police investigation into suspicious death",
+      "key_props": ["cooking_utensils", "recipe_books", "food_ingredients", "kitchen_timer"],
+      "setting_tags": ["cozy", "kitchen", "cooking", "home", "rural"],
+      "time_constraints": "During dinner preparation",
+      "weapon_method": "Kitchen knife",
+      "special_constraints": "Kitchen door found locked from inside"
+    },
+    {
+      "id": "scenario_014",
+      "mystery_type": "alibi-breaker",
+      "location": "Greenhouse",
+      "setting_description": "Victorian greenhouse during plant exhibition",
+      "victim": {
+        "name": "Flora Green",
+        "role": "Master Gardener",
+        "background": "Award-winning horticulturist and plant breeder"
+      },
+      "situation_context": "Annual rare plant exhibition for collectors",
+      "conflict_source": "Theft of rare plant specimens",
+      "detective_reason": "Police investigation into theft and murder",
+      "key_props": ["rare_plants", "gardening_tools", "plant_labels", "watering_systems"],
+      "setting_tags": ["cozy", "plants", "greenhouse", "exhibition", "collectibles"],
+      "time_constraints": "During public exhibition hours",
+      "weapon_method": "Poisonous plant extract",
+      "special_constraints": "Multiple plant enthusiasts present"
+    },
+    {
+      "id": "scenario_015",
+      "mystery_type": "suspicious-circumstances",
+      "location": "Village Inn",
+      "setting_description": "Quaint country inn during weekend getaway",
+      "victim": {
+        "name": "Chester Innkeeper",
+        "role": "Inn Owner",
+        "background": "Former city lawyer who bought rural inn for peaceful retirement"
+      },
+      "situation_context": "Busy weekend with regular guests",
+      "conflict_source": "Land development dispute threatening inn",
+      "detective_reason": "Local sheriff investigating suspicious death",
+      "key_props": ["guest_register", "room_keys", "antique_furniture", "fireplace_tools"],
+      "setting_tags": ["cozy", "inn", "rural", "weekend", "isolated"],
+      "time_constraints": "Weekend evening with full occupancy",
+      "weapon_method": "Antique fireplace poker",
+      "special_constraints": "Multiple guests with various motives"
+    }
+  ],
+
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Detective Sarah Chen",
+      "role": "Wine Authentication Expert",
+      "specialty": "Detecting wine fraud and forgeries",
+      "personality": ["analytical", "methodical", "wine_enthusiast"],
+      "background": "Former sommelier turned fraud investigator",
+      "catches_alibis": ["wine", "vintage", "tasting", "historical", "expensive"],
+      "signature_methods": ["taste_testing", "label_analysis", "provenance_checking"]
+    },
+    {
+      "id": "char_002",
+      "name": "Dr. Elena Rodriguez",
+      "role": "Forensic Astronomer",
+      "specialty": "Astronomical timeline verification",
+      "personality": ["precise", "logical", "night_owl"],
+      "background": "PhD in astrophysics with forensic consulting experience",
+      "catches_alibis": ["astronomy", "scientific", "timing", "visibility", "academic"],
+      "signature_methods": ["celestial_calculation", "timeline_analysis", "visibility_charts"]
+    },
+    {
+      "id": "char_003",
+      "name": "Marcus Thompson",
+      "role": "Automotive Forensics Specialist",
+      "specialty": "Vehicle technology and maintenance",
+      "personality": ["technical", "thorough", "hands_on"],
+      "background": "Former Tesla engineer now consulting on automotive cases",
+      "catches_alibis": ["automotive", "electric", "technical", "maintenance", "industrial"],
+      "signature_methods": ["technical_inspection", "maintenance_records", "ev_diagnostics"]
+    },
+    {
+      "id": "char_004",
+      "name": "Dr. Patricia Vale",
+      "role": "Forensic Chemist",
+      "specialty": "Chemical analysis and safety protocols",
+      "personality": ["safety_conscious", "detail_oriented", "scientific"],
+      "background": "20 years in hazmat and forensic chemistry",
+      "catches_alibis": ["chemistry", "dangerous", "laboratory", "toxic", "controlled"],
+      "signature_methods": ["chemical_analysis", "safety_review", "reaction_testing"]
+    },
+    {
+      "id": "char_005",
+      "name": "Professor James Collector",
+      "role": "Comic Book Authentication Expert",
+      "specialty": "Vintage comic verification and comic history",
+      "personality": ["scholarly", "passionate", "detail_obsessed"],
+      "background": "Comic historian and authentication specialist",
+      "catches_alibis": ["comics", "collectibles", "history", "preservation", "convention"],
+      "signature_methods": ["historical_verification", "printing_analysis", "creator_research"]
+    },
+    {
+      "id": "char_006",
+      "name": "Inspector Margaret Cozy",
+      "role": "Rural Detective",
+      "specialty": "Small-town mysteries and local knowledge",
+      "personality": ["observant", "patient", "community_minded"],
+      "background": "25 years policing rural communities",
+      "catches_alibis": ["cozy", "rural", "weather", "plants", "isolated"],
+      "signature_methods": ["local_knowledge", "witness_interviews", "physical_evidence"]
+    },
+    {
+      "id": "char_007",
+      "name": "Dr. Amanda Greenhouse",
+      "role": "Forensic Botanist",
+      "specialty": "Plant identification and toxicology",
+      "personality": ["nurturing", "scientific", "environmentally_conscious"],
+      "background": "Botanist specializing in poisonous plants",
+      "catches_alibis": ["plants", "poison", "gardening", "care", "greenhouse"],
+      "signature_methods": ["plant_identification", "toxin_analysis", "growth_patterns"]
+    },
+    {
+      "id": "char_008",
+      "name": "Detective Ray Industrial",
+      "role": "Industrial Safety Inspector",
+      "specialty": "Workplace safety and industrial accidents",
+      "personality": ["methodical", "safety_focused", "experienced"],
+      "background": "Former OSHA inspector now consulting on industrial deaths",
+      "catches_alibis": ["industrial", "safety", "workplace", "equipment", "dangerous"],
+      "signature_methods": ["safety_protocol_review", "equipment_inspection", "accident_reconstruction"]
+    }
+  ],
+
+  "investigation_beats": [
+    {
+      "id": "beat_001",
+      "sequence": 1,
+      "beat_type": "scene_arrival",
+      "description": "Detective arrives at crime scene and makes initial assessment",
+      "reveals": "Basic facts: victim, location, apparent cause of death",
+      "questions_raised": ["Who had access?", "What's the timeline?", "Any obvious motives?"]
+    },
+    {
+      "id": "beat_002",
+      "sequence": 2,
+      "beat_type": "witness_interviews",
+      "description": "Interview witnesses and gather initial statements",
+      "reveals": "Alibis from all present, basic timeline of events",
+      "questions_raised": ["Are the alibis consistent?", "Who's lying?", "What are they hiding?"]
+    },
+    {
+      "id": "beat_003",
+      "sequence": 3,
+      "beat_type": "evidence_examination",
+      "description": "Examine physical evidence and crime scene details",
+      "reveals": "Technical details that don't match witness statements",
+      "questions_raised": ["Which alibi is impossible?", "What does the expert know?"]
+    },
+    {
+      "id": "beat_004",
+      "sequence": 4,
+      "beat_type": "alibi_breakdown",
+      "description": "Expert knowledge reveals fatal flaw in suspect's alibi",
+      "reveals": "Specific technical contradiction that proves deception",
+      "questions_raised": ["Why did they lie?", "What really happened?", "What's their motive?"]
+    },
+    {
+      "id": "beat_005",
+      "sequence": 5,
+      "beat_type": "resolution",
+      "description": "Confrontation leads to confession and full explanation",
+      "reveals": "Complete truth: method, motive, and opportunity explained",
+      "questions_raised": []
+    }
+  ],
+
+  "props_evidence": [
+    {
+      "id": "prop_001",
+      "name": "Vintage Wine Bottle",
+      "description": "1943 Bordeaux with suspicious labeling and provenance",
+      "evidence_type": "physical",
+      "reveals": "Historical impossibility of vintage due to wartime",
+      "tags": ["wine", "historical", "forgery", "wartime", "expensive"],
+      "how_discovered": "Label examined under magnification reveals modern printing"
+    },
+    {
+      "id": "prop_002",
+      "name": "Astronomical Chart",
+      "description": "Star chart showing celestial positions for specific date",
+      "evidence_type": "reference",
+      "reveals": "Visibility impossibility of claimed celestial observation",
+      "tags": ["astronomy", "timing", "visibility", "calculation", "scientific"],
+      "how_discovered": "Cross-referenced with astronomical database and calculations"
+    },
+    {
+      "id": "prop_003",
+      "name": "EV Diagnostic Computer",
+      "description": "Vehicle's onboard computer with maintenance logs",
+      "evidence_type": "digital",
+      "reveals": "Vehicle lacks components mentioned in alibi",
+      "tags": ["automotive", "digital", "technical", "maintenance", "electric"],
+      "how_discovered": "Downloaded diagnostic data contradicts claimed repairs"
+    },
+    {
+      "id": "prop_004",
+      "name": "Chemical Safety Data Sheet",
+      "description": "Official documentation of chemical properties and hazards",
+      "evidence_type": "reference",
+      "reveals": "Dangerous reaction mentioned in alibi would be lethal",
+      "tags": ["chemistry", "safety", "dangerous", "documentation", "laboratory"],
+      "how_discovered": "Consulted chemical database and safety protocols"
+    },
+    {
+      "id": "prop_005",
+      "name": "Comic Grading Certificate",
+      "description": "Professional authentication and grading documentation",
+      "evidence_type": "document",
+      "reveals": "Comic handling described in alibi would void certification",
+      "tags": ["comics", "authentication", "grading", "preservation", "collectibles"],
+      "how_discovered": "Examined CGC certification and handling requirements"
+    },
+    {
+      "id": "prop_006",
+      "name": "Weather Station Data",
+      "description": "Local meteorological records for specific time period",
+      "evidence_type": "digital",
+      "reveals": "Weather conditions contradict alibi claims",
+      "tags": ["weather", "data", "timing", "conditions", "cozy"],
+      "how_discovered": "Accessed local weather service historical data"
+    },
+    {
+      "id": "prop_007",
+      "name": "Plant Care Schedule",
+      "description": "Detailed log of plant watering and maintenance",
+      "evidence_type": "document",
+      "reveals": "Plants were recently cared for despite abandonment claim",
+      "tags": ["plants", "care", "schedule", "evidence", "greenhouse"],
+      "how_discovered": "Found hidden in greenhouse with recent entries"
+    },
+    {
+      "id": "prop_008",
+      "name": "Security Camera Footage",
+      "description": "Digital surveillance showing facility access",
+      "evidence_type": "video",
+      "reveals": "Suspect's movements contradict stated timeline",
+      "tags": ["security", "video", "timeline", "access", "industrial"],
+      "how_discovered": "Retrieved from facility's digital security system"
+    },
+    {
+      "id": "prop_009",
+      "name": "Laboratory Equipment Manual",
+      "description": "Technical documentation for chemical processing equipment",
+      "evidence_type": "reference",
+      "reveals": "Equipment operation contradicts safety claim in alibi",
+      "tags": ["chemistry", "equipment", "manual", "safety", "controlled"],
+      "how_discovered": "Consulted manufacturer's technical specifications"
+    },
+    {
+      "id": "prop_010",
+      "name": "Comic Publication History",
+      "description": "Database of comic publishing dates and variant information",
+      "evidence_type": "reference",
+      "reveals": "Claimed variant never existed or creator meeting impossible",
+      "tags": ["comics", "history", "publication", "variants", "convention"],
+      "how_discovered": "Researched comic industry database and creator biographies"
+    }
+  ],
+
+  "settings": [
+    {
+      "id": "setting_001",
+      "name": "Underground Wine Cellar",
+      "atmosphere": "dimly lit, temperature controlled, exclusive atmosphere",
+      "layout": "narrow stone corridors, private tasting room, extensive storage racks",
+      "constraints": ["single_entrance", "climate_controlled", "limited_lighting", "stone_construction"],
+      "props_available": ["vintage_bottles", "tasting_equipment", "temperature_gauges", "humidity_controls"],
+      "tags": ["wine", "underground", "private", "locked", "expensive"]
+    },
+    {
+      "id": "setting_002",
+      "name": "Observatory Dome",
+      "atmosphere": "scientific, isolated, panoramic night sky views",
+      "layout": "circular room with rotating dome, central telescope mount, control panels",
+      "constraints": ["rotating_mechanism", "light_sensitive", "remote_location", "height_access"],
+      "props_available": ["telescope", "star_charts", "computer_systems", "dome_controls", "observation_equipment"],
+      "tags": ["astronomy", "scientific", "isolated", "rotating", "locked"]
+    },
+    {
+      "id": "setting_003",
+      "name": "Professional Garage",
+      "atmosphere": "industrial, well-equipped, organized workspace",
+      "layout": "multiple service bays, tool storage areas, vehicle lifts, office space",
+      "constraints": ["security_cameras", "electronic_locks", "fire_safety_systems", "ventilation"],
+      "props_available": ["diagnostic_tools", "vehicle_parts", "computer_systems", "safety_equipment"],
+      "tags": ["automotive", "technical", "industrial", "secure", "electric"]
+    },
+    {
+      "id": "setting_004",
+      "name": "Chemistry Laboratory",
+      "atmosphere": "sterile, controlled, safety-focused environment",
+      "layout": "workbenches, fume hoods, storage areas, emergency stations",
+      "constraints": ["ventilation_systems", "safety_protocols", "hazmat_storage", "access_control"],
+      "props_available": ["chemicals", "glassware", "safety_equipment", "analysis_instruments"],
+      "tags": ["chemistry", "scientific", "dangerous", "controlled", "laboratory"]
+    },
+    {
+      "id": "setting_005",
+      "name": "Comic Convention Hall",
+      "atmosphere": "bustling, energetic, crowded with enthusiasts",
+      "layout": "vendor booths, display areas, meeting rooms, main stage",
+      "constraints": ["crowd_control", "security_checkpoints", "time_schedules", "noise_levels"],
+      "props_available": ["comic_displays", "vendor_tables", "PA_system", "security_cameras"],
+      "tags": ["comics", "convention", "crowded", "public", "collectibles"]
+    },
+    {
+      "id": "setting_006",
+      "name": "Country Cottage",
+      "atmosphere": "cozy, peaceful, surrounded by nature",
+      "layout": "small rooms, garden views, fireplace, kitchen",
+      "constraints": ["remote_location", "limited_communication", "weather_dependent", "single_access_road"],
+      "props_available": ["gardening_tools", "books", "fireplace_implements", "kitchen_utensils"],
+      "tags": ["cozy", "rural", "isolated", "peaceful", "plants"]
+    },
+    {
+      "id": "setting_007",
+      "name": "Vineyard Tasting Room",
+      "atmosphere": "elegant, sophisticated, vineyard views",
+      "layout": "tasting bar, private rooms, wine storage, outdoor terrace",
+      "constraints": ["appointment_only", "limited_hours", "wine_regulations", "guest_restrictions"],
+      "props_available": ["wine_glasses", "tasting_notes", "vineyard_maps", "vintage_collections"],
+      "tags": ["wine", "elegant", "private", "tasting", "vineyard"]
+    },
+    {
+      "id": "setting_008",
+      "name": "Victorian Greenhouse",
+      "atmosphere": "humid, lush, filled with exotic plants",
+      "layout": "glass structure, plant beds, potting areas, water features",
+      "constraints": ["climate_control", "fragile_structure", "plant_safety", "visitor_restrictions"],
+      "props_available": ["rare_plants", "gardening_tools", "plant_labels", "watering_systems"],
+      "tags": ["plants", "greenhouse", "humid", "fragile", "cozy"]
+    }
+  ]
+}
